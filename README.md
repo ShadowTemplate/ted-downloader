@@ -1,6 +1,6 @@
 # TED Downloader
 
-A simple tool to download talks from [TED](https://www.ted.com/) via CLI.
+A simple tool to download [TED](https://www.ted.com/) talks via CLI.
 
 ---
 ## Information
@@ -24,7 +24,7 @@ A TED talk can be downloaded by its URL (typically
 _https://www.ted.com/talks/TALK_AUTHOR_AND_TITLE_), e.g.:
 
 ```
-python ted.py https://www.ted.com/talks/barry_schwartz_on_the_paradox_of_choice
+$ python ted.py -t https://www.ted.com/talks/barry_schwartz_on_the_paradox_of_choice
 ```
 
 The output should be a nicely formatted video with title "*Barry Schwartz: The 
@@ -37,22 +37,12 @@ use them in the script.
 
 ### Prerequisites
 
-Clone the repository with:
+Clone the repository and install the required Python dependencies:
 
 ```
-git clone https://github.com/ShadowTemplate/ted-downloader.git
-```
-
-Move to the new project folder:
-
-```
-cd ted-downloader
-```
-
-Install the required Python dependencies via pip: 
-
-```
-pip install -r requirements.txt
+$ git clone https://github.com/ShadowTemplate/ted-downloader.git
+$ cd ted-downloader
+$ pip install --user -r requirements.txt
 ```
 
 ---

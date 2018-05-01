@@ -43,5 +43,12 @@ def main(url):
 
 
 if __name__ == "__main__":
-    import sys
-    main(sys.argv[1])
+    import argparse
+
+    parser = argparse.ArgumentParser(
+        description="A simple tool to download TED talks via CLI.")
+    parser.add_argument("-t", "--talk", type=str, required=True,
+                        help="Link to TED talk")
+    args = parser.parse_args()
+    main(args.talk)
+
