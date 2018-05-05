@@ -60,7 +60,7 @@ Any contribution is welcome. Feel free to open issues or submit pull requests.
 ---
 ## License
 
-This project is licensed under the  GNU GPLv3 license.
+This project is licensed under the GNU GPLv3 license.
 Please refer to the [LICENSE.md](LICENSE.md) file for details.
 
 ---
