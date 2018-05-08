@@ -41,7 +41,7 @@ Clone the repository and install the required Python dependencies:
 
 ```
 $ git clone https://github.com/ShadowTemplate/ted-downloader.git
-$ cd ted-downloader
+$ cd ted-downloader/
 $ pip install --user -r requirements.txt
 ```
 
