@@ -11,7 +11,7 @@ A simple tool to download [TED](https://www.ted.com/) talks via CLI.
 
 **Development year(s)**: `2018+`
 
-**Authors**: [ShadowTemplate](https://github.com/ShadowTemplate)
+**Author(s)**: [ShadowTemplate](https://github.com/ShadowTemplate)
 
 **Notes**: *This tool parses the source code of TED pages and may thus suddenly 
 break if changes are performed on its front end.*
@@ -64,5 +64,6 @@ This project is licensed under the GNU GPLv3 license.
 Please refer to the [LICENSE.md](LICENSE.md) file for details.
 
 ---
-*This README.md complies with [this project template](https://github.com/ShadowTemplate/project-template). Feel free to adopt it
+*This README.md complies with [this project template](
+https://github.com/ShadowTemplate/project-template). Feel free to adopt it
 and reuse it.*
