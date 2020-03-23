@@ -14,8 +14,7 @@ def parse_page(driver):
                 content = content.lstrip(script_clue).rstrip(")")
                 json_content = json.loads(content)
                 title = json_content["__INITIAL_DATA__"]["name"]
-                download_url = json_content["__INITIAL_DATA__"]["media"][
-                    "internal"]["podcast-high-en"]["uri"]
+                download_url = json_content["__INITIAL_DATA__"]["talks"][0]["downloads"]["subtitledDownloads"]["en"]["high"]
                 return title, download_url
     except Exception:
         print(traceback.format_exc())
@@ -25,9 +24,9 @@ def parse_page(driver):
 
 def main(url):
     print("Processing URL %s..." % url)
-    options = webdriver.ChromeOptions()
-    options.add_argument("headless")
-    driver = webdriver.Chrome(chrome_options=options)
+    options = webdriver.FirefoxOptions()
+    options.add_argument("--headless")
+    driver = webdriver.Firefox(firefox_options=options)
     driver.get(url)
     title, download_url = parse_page(driver)
     print("TED talk: {}\nDownload URL: {}".format(title, download_url))
